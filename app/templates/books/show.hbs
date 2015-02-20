@@ -1,0 +1,6 @@
+<h1>{{this.title}}</h1>
+
+<p>{{this.genre}} | {{this.year}}</p>
+<img {{bind-attr src=this.image}}/>
+{{#link-to "books.reviews" this}}Reviews{{/link-to}}
+<p>Average Score: {{avgScore}}</p>
